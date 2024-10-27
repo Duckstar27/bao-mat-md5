@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>task</title>
+    <title>bao-mat</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
 </head>
 <body>
@@ -14,10 +14,15 @@
             <h2 class="textcolor">nhập câu muốn chuyển đổi:</h2>
             <input type="text" id="inputText" placeholder="Nhập câu của bạn">
             <br>
-            <button onclick="generateMD5()">Chuyển đổi sang slug</button>
-            <h2 class="textcolor" style="margin: 10px;;">kết quả:</h2>
+            <button onclick="generate()">Chuyển đổi sang mã bảo mật</button>
+            <h2 class="textcolor" style="margin: 10px;;">kết quả MD5:</h2>
+            <p id="MD5Result">.</p>
             <hr>
-            <p id="md5Result"></p>
+            <h2 class="textcolor" style="margin: 10px;;">kết quả SHA256:</h2>
+            <p id="SHA256Result">.</p>
+            <hr>
+            <h2 class="textcolor" style="margin: 10px;;">kết quả SHA3:</h2>
+            <p id="SHA3Result">.</p>           
         </div>
     </div>
 </body>
