@@ -16,14 +16,44 @@
             <br>
             <button onclick="generate()">Chuyển đổi sang mã bảo mật</button>
             <h2 class="textcolor" style="margin: 10px;;">kết quả MD5:</h2>
-            <p id="MD5Result">.</p>
+            <p id="MD5Result" style="text-align:center">.</p>
             <hr>
-            <h2 class="textcolor" style="margin: 10px;;">kết quả SHA256:</h2>
-            <p id="SHA256Result">.</p>
+            <h2 class="textcolor" style="margin: 10px;;">kết quả SHA-256:</h2>
+            <p id="SHA256Result" style="text-align:center">.</p>
             <hr>
-            <h2 class="textcolor" style="margin: 10px;;">kết quả SHA3:</h2>
-            <p id="SHA3Result">.</p>           
+            <h2 class="textcolor" style="margin: 10px;;">kết quả SHA-3:</h2>
+            <p id="SHA3Result" style="text-align:center">.</p>           
         </div>
     </div>
+    <div class="frame">  
+        <div class="square-box">
+            <h2 class="textcolor">nhập câu muốn kiểm tra:</h2>
+            <input type="text" id="plainText" placeholder="Nhập câu của bạn">
+            <br>
+            <div class="square-box2">
+                <div class="square-box3">
+                    <h2 class="textcolor">MD5 :</h2>
+                    <input type="text" id="md5Hash" placeholder="Nhập câu của bạn" class="input2">
+                    <button onclick="checkMD5()" class="button2">Kiểm tra</button>
+                    <h3 id="MD5"></h3>
+                </div>
+                <div><hr class="vertical"></div>
+                <div class="square-box3">
+                    <h2 class="textcolor">SHA-256 :</h2>
+                    <input type="text" id="SHA256Hash" placeholder="Nhập câu của bạn" class="input2">
+                    <button onclick="checkSHA256()" class="button2">Kiểm tra</button>
+                    <h3 id="SHA256"></h3>
+                </div>
+                <div><hr class="vertical"></div>
+                <div class="square-box3">
+                    <h2 class="textcolor">SHA-3 :</h2>
+                    <input type="text" id="SHA3Hash" placeholder="Nhập câu của bạn" class="input2">
+                    <button onclick="checkSHA3()" class="button2">Kiểm tra</button>
+                    <h3 id="SHA3"></h3>
+                </div>
+            </div>
+            
+        </div>
+    </div>  
 </body>
 </html>
